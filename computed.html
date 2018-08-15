@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/2.0vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<p>{{site}}</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var el = new Vue({
+			el:"#app",
+			data:{
+				name:"刘彦恒",
+				url:"加油"
+			},
+			computed:{
+				site:{
+					get:function(){
+						return this.name + ' ' + this.url
+					}
+				}
+			}
+		})
+	</script>
+</html>
