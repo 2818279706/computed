@@ -22,8 +22,18 @@
 					get:function(){
 						return this.name + ' ' + this.url
 					}
+				},
+				set:function (val){
+					var names = val.split(' ')
+					this.name = names[0]
+					this.url = names[names.length - 1]
 				}
 			}
 		})
+		el.site = "刘彦恒 加油"
+		document.write('name' + el.name);
+		document.write("</br>");
+		document.write('url' + el.url);
+		
 	</script>
 </html>
